@@ -1,0 +1,28 @@
+.mobile-menu {
+  background-color: #e17992;
+  height: 100%vh;
+  max-height: 1020px;
+  max-width: 254px;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-top: 32px;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+}
