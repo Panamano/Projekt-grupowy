@@ -27,15 +27,13 @@ ul {
   border-radius: 22px;
   cursor: pointer;
 }
-.button--mobile-menu {
-  justify-content: space-evenly;
-}
-.button--mobile-menu > svg {
+.button > svg {
   width: 20px;
   height: 20px;
-  fill: #FFA5BA;
+  fill: #D41443;
+  margin-left: 12px;
 }
-.button__close {
+.button--close {
   background: url(../images/close.svg);
   fill: white;
   background-size: contain;
@@ -50,13 +48,8 @@ ul {
   transform: rotate(-90deg);
   transition: 250ms transform;
 }
-.button__close:hover {
+.button--close:hover, .button--close:focus {
   transform: rotate(90deg);
-}
-.button > svg {
-  width: 5.26px;
-  height: 8px;
-  fill: #d41443;
 }
 
 .mobile-menu {

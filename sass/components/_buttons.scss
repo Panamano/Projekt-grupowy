@@ -14,15 +14,14 @@
   border: 0;
   border-radius: 22px;
   cursor: pointer;
-  &--mobile-menu {
-    justify-content: space-evenly;
-    & > svg {
-      width: 20px;
-      height: 20px;
-      fill: $font-pink;
-    }
+
+  & > svg {
+    width: 20px;
+    height: 20px;
+    fill: $font-dark-pink;
+    margin-left: 12px;
   }
-  &__close {
+  &--close {
     background: url(../images/close.svg);
     fill: white;
     background-size: contain;
@@ -36,13 +35,9 @@
     border-radius: 50%;
     transform: rotate(-90deg);
     transition: 250ms transform;
-    &:hover {
+    &:hover,
+    &:focus  {
       transform: rotate(90deg);
     }
-  }
-  & > svg {
-    width: 5.26px;
-    height: 8px;
-    fill: #d41443;
   }
 }
