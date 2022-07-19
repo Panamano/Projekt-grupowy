@@ -14,8 +14,13 @@
   border: 0;
   border-radius: 22px;
   cursor: pointer;
-  &__arrow {
-    fill: #d41443;
+  &--mobile-menu {
+    justify-content: space-evenly;
+    & > svg {
+      width: 20px;
+      height: 20px;
+      fill: $font-pink;
+    }
   }
   &__close {
     background: url(../images/close.svg);

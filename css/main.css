@@ -27,8 +27,13 @@ ul {
   border-radius: 22px;
   cursor: pointer;
 }
-.button__arrow {
-  fill: #d41443;
+.button--mobile-menu {
+  justify-content: space-evenly;
+}
+.button--mobile-menu > svg {
+  width: 20px;
+  height: 20px;
+  fill: #FFA5BA;
 }
 .button__close {
   background: url(../images/close.svg);
@@ -56,9 +61,8 @@ ul {
 
 .mobile-menu {
   background-color: #e17992;
-  height: 100% vh;
-  max-height: 1020px;
-  max-width: 254px;
+  height: 100vh;
+  width: 254px;
   padding-top: 60px;
   position: fixed;
   top: 0;
