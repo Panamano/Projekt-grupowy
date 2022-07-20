@@ -8,12 +8,21 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #d41443;
+  color: $font-dark-pink;
   height: 44px;
   width: 100%;
   border: 0;
   border-radius: 22px;
+  transition: 250ms color, 250ms background-color ;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $font-dark-pink;
+    & > svg {
+      fill: white;
+    }
+  }
 
   & > svg {
     width: 20px;
@@ -36,8 +45,18 @@
     transform: rotate(-90deg);
     transition: 250ms transform;
     &:hover,
-    &:focus  {
+    &:focus {
       transform: rotate(90deg);
+    }
+  }
+  &--product {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    & > svg {
+      width: 16px;
+      height: 16px;
+      margin: 0;
     }
   }
 }

@@ -10,6 +10,11 @@ ul {
   padding: 0 20px;
 }
 
+p {
+  margin: 0;
+  display: block;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -20,12 +25,20 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #d41443;
+  color: #D41443;
   height: 44px;
   width: 100%;
   border: 0;
   border-radius: 22px;
+  transition: 250ms color, 250ms background-color;
   cursor: pointer;
+}
+.button:hover, .button:focus {
+  color: white;
+  background-color: #D41443;
+}
+.button:hover > svg, .button:focus > svg {
+  fill: white;
 }
 .button > svg {
   width: 20px;
@@ -50,6 +63,16 @@ ul {
 }
 .button--close:hover, .button--close:focus {
   transform: rotate(90deg);
+}
+.button--product {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.button--product > svg {
+  width: 16px;
+  height: 16px;
+  margin: 0;
 }
 
 .mobile-menu {
@@ -76,4 +99,45 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+}
+
+.customer {
+  padding-top: 154px;
+  padding-bottom: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customer__picture {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-image: url("../images/customer1.jpg");
+  margin-bottom: 29px;
+}
+.customer__review {
+  z-index: 1;
+  text-decoration-color: #E1E1E1;
+  position: relative;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #000000;
+  background: repeating-linear-gradient(180deg, #E1E1E1);
+  background-color: #fafafa;
+  width: 100%;
+  padding: 43px 66px 26px 57px;
+}
+.customer__quote {
+  z-index: -1;
+  position: absolute;
+  top: 28px;
+  left: 61px;
+  width: 54px;
+  height: 40px;
+  background-image: url("../images/quote.svg");
 }/*# sourceMappingURL=main.css.map */
