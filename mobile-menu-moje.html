@@ -18,17 +18,22 @@
     <title>Mobile-menu</title>
   </head>
   <body>
-    <section class="section container customer">
-      <div class="customer__picture"></div>
-      <div class="customer__review">
-        <p>
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
-        <div class="customer__quote"></div>
-      </div>
-      <div class="customer__slider"></div>
-    </section>
+    
+    <div class="container mobile-menu">
+      <button class="button button--close js-close-menu">
+      </button>
+      <button class="button button--mobile">Buy now 
+        <svg>
+            <use href="./images/icons.svg#icon-right"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__navigation">
+        <li><a class="mobile-menu__link" href="">Home</a></li>
+        <li><a class="mobile-menu__link" href="">About us</a></li>
+        <li><a class="mobile-menu__link" href="">How it`s made</a></li>
+        <li><a class="mobile-menu__link" href="">Our products</a></li>
+        <li><a class="mobile-menu__link" href="">Contacts</a></li>
+      </ul>
+    </div>
   </body>
 </html>

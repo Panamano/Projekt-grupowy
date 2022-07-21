@@ -10,7 +10,7 @@
   line-height: 21px;
   color: $font-dark-pink;
   height: 44px;
-  width: 100%;
+  width: 180px;
   border: 0;
   border-radius: 22px;
   transition: 250ms color, 250ms background-color ;
@@ -29,6 +29,10 @@
     height: 20px;
     fill: $font-dark-pink;
     margin-left: 12px;
+  }
+  
+  &--mobile {
+    width: 100%;
   }
   &--close {
     background: url(../images/close.svg);
