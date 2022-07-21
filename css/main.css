@@ -30,7 +30,7 @@ p {
   width: 180px;
   border: 0;
   border-radius: 22px;
-  transition: 250ms color, 250ms background-color;
+  transition: 250ms color, 250ms background-color, 250ms fill;
   cursor: pointer;
 }
 .button:hover, .button:focus {
@@ -39,6 +39,16 @@ p {
 }
 .button:hover > svg, .button:focus > svg {
   fill: white;
+}
+.button--product {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.button--product > svg {
+  width: 16px;
+  height: 16px;
+  margin: 0;
 }
 .button > svg {
   width: 20px;
@@ -67,16 +77,6 @@ p {
 .button--close:hover, .button--close:focus {
   transform: rotate(90deg);
 }
-.button--product {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.button--product > svg {
-  width: 16px;
-  height: 16px;
-  margin: 0;
-}
 
 .mobile-menu {
   background-color: #e17992;
@@ -102,6 +102,10 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+  transition: 250ms color;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #D41443;
 }
 
 .customer {
